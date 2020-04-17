@@ -7,7 +7,7 @@ describe package 'python3-pip' do
   it { should be_installed }
 end
 
-describe directory '/home/vagrant/Downloads' do
+describe directory '/home/ubuntu/Downloads' do
   it { should exist }
 end
 

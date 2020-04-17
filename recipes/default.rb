@@ -10,7 +10,7 @@ end
 
 package 'python3-pip'
 
-directory '/home/vagrant/Downloads' do
+directory '/home/ubuntu/Downloads' do
   owner 'root'
   group 'root'
   action :create
