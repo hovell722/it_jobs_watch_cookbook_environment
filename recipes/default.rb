@@ -40,3 +40,9 @@ bash 'install_requirements' do
     sudo pip3 install zipp==0.5.2
   EOH
 end
+
+bash 'install_java' do
+  code <<-EOH
+    sudo apt-get -y install default-jdk default-jre
+    EOH
+end
