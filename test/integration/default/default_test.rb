@@ -11,6 +11,18 @@ describe directory '/home/ubuntu/Downloads' do
   it { should exist }
 end
 
+describe package 'packer' do
+  it { should be_installed }
+end
+
+describe package 'default-jdk' do
+  it { should be_installed }
+end
+
+describe package 'default-jre' do
+  it { should be_installed }
+end
+
 describe file('/usr/local/lib/python3.6/dist-packages/atomicwrites') do
   it { should exist }
 end

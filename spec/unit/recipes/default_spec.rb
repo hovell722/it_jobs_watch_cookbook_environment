@@ -27,5 +27,9 @@ describe 'it_jobs_watch_cookbook_environment::default' do
     it 'should create a Downloads folder' do
       expect(chef_run).to create_directory '/home/ubuntu/Downloads'
     end
+
+    it 'should include recipe packer' do
+      expect(chef_run).to install_package 'packer'
+    end
   end
 end
